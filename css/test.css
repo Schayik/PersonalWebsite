@@ -1,0 +1,73 @@
+@font-face {
+  font-family: Teko-Regular;
+  src: url("../font/teko-regular.ttf");
+}
+
+body {
+  margin: 0;
+  font-family: Teko-Regular;
+}
+
+h3 {
+  font-size: 32px;
+  margin: 0;
+}
+
+.topnav {
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  overflow: hidden;
+  background-color: black;
+  border-bottom: 4px #FF9500 solid;
+}
+.topnav a {
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+.topnav a:hover {
+  background-color: #ddd;
+  color: grey;
+}
+.active {
+  /* background-color: #4CAF50; */
+  color: #FF9500;
+}
+
+.topnav a.logo {
+  margin-right: auto;
+  background-image: url("../img/LogoPimBorder.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding-left: 64px;
+}
+
+.topnav a.icon {
+  display: none;
+}
+.topnav a.icon img {
+  height: 28px;
+}
+
+@media screen and (max-width: 768px) {
+
+  .topnav::before {
+    content: '';
+    width: 100%;
+    order: 1;
+  }
+  .topnav a:nth-child(n+3) {
+    padding: 10px 12px;
+    display: none;
+    order: 1;
+  }
+  .topnav a:nth-child(n+3) h3 {font-size: 24px;}
+  .topnav a.icon {display: block;}
+
+  .topnav.responsive {justify-content: space-around;}
+  .topnav.responsive a {display: block;}
+
+}
