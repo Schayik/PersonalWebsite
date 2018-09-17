@@ -58,10 +58,15 @@
     display: none;
     order: 1;
   }
-  .topnav a:nth-child(n+3) h3 {font-size: 24px;}
   .topnav a.icon {display: block;}
 
   .topnav.responsive {justify-content: space-around;}
   .topnav.responsive a {display: block;}
 
+}
+
+@media screen and (max-width: 576px) {
+
+  .topnav a:nth-child(n+3) h3 {font-size: 24px;}
+  
 }

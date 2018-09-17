@@ -156,12 +156,25 @@ ul.hex li {
   padding: 6px 0 6px 36px;
 }
 
+@media screen and (max-width: 992px) {
+  div.width-30 {width: 45%}
+  div.width-26 {width: 45%}
+}
+
 @media screen and (max-width: 768px) {
 
+  div.width-49 {width: 100%}
+
+  div.chart img {
+    float: none;
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 576px) {
+
   div.wrapper {
-    align-items: stretch;
-    display: flex;
-    flex-wrap: wrap;
     justify-content: center;
     margin: 20px 0 0 0;
   }
@@ -173,12 +186,6 @@ ul.hex li {
   div.skills {
     width: 50%;
     padding-top: 4px;
-  }
-
-  div.chart img {
-    float: none;
-    display: block;
-    margin: 0 auto;
   }
 
   img.big {
