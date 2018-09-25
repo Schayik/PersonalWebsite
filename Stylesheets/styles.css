@@ -1,0 +1,195 @@
+@font-face {
+  font-family: Teko-Regular;
+  src: url("../Fonts/teko-regular.ttf");
+}
+
+body {
+  margin: 0;
+  font-family: Teko-Regular;
+  background-color: #FAFAFA;
+}
+
+h1 {
+  font-size: 64px;
+  margin: 0;
+}
+
+h2 {
+  font-size: 40px;
+  margin: 0;
+}
+h2.padding-10-0 {padding: 10px 0;}
+h2.padding-20-0 {padding: 20px 0;}
+h2.normal, h3.normal, span.normal{font-weight: normal;}
+
+h3 {
+  font-size: 32px;
+  margin: 0;
+}
+h3.padding-top {padding-top: 10px;}
+
+h4 {
+  font-size: 24px;
+  font-weight: normal;
+  margin: 0;
+}
+h4.bold {font-weight: bold;}
+h4.padding {padding: 20px 0 40px 0;}
+
+p {
+  font-size: 20px;
+  text-align: justify;
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+a.underline {text-decoration: underline;}
+a:hover {color: #A5AFB0;}
+
+.contact-text {
+  position: absolute;
+  top: 45%;
+  width: 100%;
+  text-align: center;
+}
+.black-text {
+  color: black;
+}
+
+a.contact-button {
+  float: right;
+  color: black;
+  text-decoration: none;
+  background-image: url("../Images/Contact_Button.png");
+  background-size: cover;
+  padding: 18px 32px 18px 24px;
+}
+
+div.bottom-right {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  border: 2px red solid;
+}
+
+div.container {
+  overflow: auto;
+  padding: 50px 8%;
+}
+div.black {color: white;}
+div.bg1 {
+  height: calc(100vh - 100px);
+  background-image: url("../Images/Background.jpg");
+}
+div.bg2 {
+  background-image: url("../Images/Background2.png");
+  background-size: cover;
+}
+div.bg3 {
+  background-image: url("../Images/Background.jpg");
+}
+
+div.wrapper {
+  align-items: stretch;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.absolute-center {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+div.item {
+  position: relative;
+  padding-top: 40px;
+}
+div.no-padding {padding-top: 0;}
+div.width-49 {width: 49.5%}
+div.width-45 {width: 45%}
+div.width-30 {width: 30%}
+div.width-26 {width: 26%}
+div.skills {
+  width: 50%;
+  padding-top: 8px;
+}
+
+div.chart {overflow: auto;}
+div.chart img {
+  width: 120px;
+  float: left;
+  padding-right: 20px;
+}
+div.height-140 {height: 140px;}
+div.padding-bot-20 {padding-bottom: 20px;}
+
+.center {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
+
+img.block {display: block;}
+img.small {width: 120px;}
+img.big {width: 280px;}
+img.padding-right-20 {padding-right: 20px;}
+img.skills {vertical-align: middle;  height: 32px;}
+img.float-left {float: left;}
+img.float-right {float: right; padding-left: 20px;}
+img.fullwidth {width: 100%;}
+
+ul.hex {
+  list-style: none;
+  padding-left: 0;
+}
+
+ul.hex li {
+  background-image: url("../Images/Hexagon_OrangeFill.png");
+  background-repeat: no-repeat;
+  background-size: 28px;
+  padding: 6px 0 6px 36px;
+}
+
+@media screen and (max-width: 992px) {
+  div.width-30 {width: 45%}
+  div.width-26 {width: 45%}
+}
+
+@media screen and (max-width: 768px) {
+
+  div.width-49 {width: 100%}
+
+  div.chart img {
+    float: none;
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 576px) {
+
+  div.wrapper {
+    justify-content: center;
+    margin: 20px 0 0 0;
+  }
+
+  div.item {
+    padding-top: 20px;
+    width: 100%;
+  }
+  div.skills {
+    width: 50%;
+    padding-top: 4px;
+  }
+
+  img.big {
+    width: 200px;
+  }
+
+}
