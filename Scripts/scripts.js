@@ -26,6 +26,14 @@ function myTopnavFunction() {
     }
 }
 
+// If the device is smaller than 768px, it shows the popup. Else it goes to game page.
+function checkDevice() {
+  if (window.matchMedia("(min-width: 768px)").matches){
+    document.activeElement.href="#";
+    window.open("crystalconflict.html", "_self");
+  }
+}
+
 // The function actually applying the offset
 function offsetAnchor() {
   if (location.hash.length !== 0) {

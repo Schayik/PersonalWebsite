@@ -32,10 +32,19 @@
     <!-- Play Game Part -->
     <div id="home" class="container bg1">
       <div class="wrapper absolute-center">
-        <a href="crystalconflict.html">
+        <a href="#mobile-popup" class="open-popup-link" onclick="return checkDevice()">
           <img src="Images/PlayGame.png"/>
         </a>
       </div>
+    </div>
+
+    <!-- Mobile Popup -->
+    <div id="mobile-popup" class="white-popup mfp-hide">
+      <h2>Alert</h2>
+      <p>This game is not optimized for mobile devices. The
+        <a href="Build/CrystalConflictAndroid.apk" class="underline" download>Android</a>
+        version can be downloaded.
+      </p>
     </div>
 
     <!-- About Me -->

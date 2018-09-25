@@ -33,37 +33,3 @@ body {
 .webgl-content .footer .webgl-logo {background-image: url('webgl-logo.png'); width: 204px; float: left;}
 .webgl-content .footer .title {margin-right: 10px; float: right;}
 .webgl-content .footer .fullscreen {background-image: url('fullscreen.png'); width: 38px; float: right;}
-
-/* p {
-  display: block;
-  text-align: center;
-  padding: 0 2%;
-}
-
-a {
-  color: white;
-  text-decoration: underline;
-}
-a:hover {color: #A5AFB0}
-
-div.game-size {
-  width: 720px;
-  height: 450px;
-}
-
-div.mob-only {
-  display: none;
-}
-
-@media only screen and (max-width: 768px) {
-
-  div.mob-only {
-    display: block;
-  }
-
-  div.game-size {
-    width: 100vw;
-    height: calc(100vw / 1.6);
-  }
-
-} */
