@@ -1,2 +1,2 @@
 # PersonalWebsite
-My Personal Website containing my full resume, portfolio, video pitch, and game.
+My personal website containing my full resume, portfolio, video pitch, and game.
